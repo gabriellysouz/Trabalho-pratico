@@ -15,7 +15,7 @@ let conteudoSobreMim = `<div class="container-sobremim-principal">
                 Minha trajetória profissional começou fora da área de tecnologia, mas foi justamente essa bagagem diversa que me trouxe uma visão mais humana e comunicativa para os projetos que desenvolvo. Tenho buscado evoluir constantemente, estudando linguagens como HTML, CSS, JavaScript e também explorando o back-end com Node.js e bancos de dados como MongoDB.
                 Neste portfólio, você vai encontrar alguns dos projetos que desenvolvi como parte dos meus estudos e também projetos pessoais, nos quais pude colocar em prática minhas habilidades técnicas, criatividade e vontade de aprender. Estou sempre aberta a novos desafios e oportunidades que me permitam crescer e contribuir com soluções de valor.
                 Fique à vontade para explorar meus trabalhos e, se quiser bater um papo ou colaborar, será um prazer falar com você!</p>
-                <img class="img-sobremim" src="/img/girl-158465_640.png" alt="">
+                <img class="img-sobremim" src="img/girl-158465_640.png" alt="">
             </div>
         </div>`
 let conteudoFormacao = `<div class="container-formacao-principal">
@@ -40,12 +40,12 @@ let conteudoFormacao = `<div class="container-formacao-principal">
                 <li class="item-lista">Ingles - Intermediario</li>
             </ul>
             <div class="certificados">
-                <img src="/img/formacao-html-css.png" alt="">
-                <img src="/img/formacao-js-poo.png" alt="">
-                <img src="/img/formacao-js.png" alt="">
-                <img src="/img/formacao-python.png" alt="">
-                <img src="/img/curso-node.png" alt="">
-                <img src="/img/curso-node2.png" alt="">
+                <img src="img/formacao-html-css.png" alt="">
+                <img src="img/formacao-js-poo.png" alt="">
+                <img src="img/formacao-js.png" alt="">
+                <img src="img/formacao-python.png" alt="">
+                <img src="img/curso-node.png" alt="">
+                <img src="img/curso-node2.png" alt="">
             </div>
 
         </div>`
@@ -53,22 +53,22 @@ let conteudoProjeto = `<div class="container-projetos-principal">
             <h1 class="titulo-principal">Projetos</h1>
             <div class="container-projeto">
                 <div class="container-imagem-projeto">
-                    <img src="/img/projeto1-aluradev.png" alt="">
-                    <img src="/img/projeto1-aluradev2.png" alt="">
+                    <img src="img/projeto1-aluradev.png" alt="">
+                    <img src="img/projeto1-aluradev2.png" alt="">
                 </div>
                 <p class="descricao-projeto">Projeto de editor de codigos desenvolvido a partir do Challange Alura. Possui pagina principal onde é possivel escrever o codigo, titulo, descrição e alterar a cor da borda e uma segunda pagina chamada comunidade, onde é possivel ver os codigos salvos. Utiliza HTML, CSS e JavaScript como tecnologia.</p>
             </div>
             <div class="container-projeto">
                 <div class="container-imagem-projeto">
-                    <img src="/img/projeto2-adota.png" alt="">
-                    <img src="/img/projeto2-adota2.png" alt="">
+                    <img src="img/projeto2-adota.png" alt="">
+                    <img src="img/projeto2-adota2.png" alt="">
                 </div>
                 <p class="descricao-projeto">Projeto de site de adoção desenvolvido a partir do Challange Alura. Contem uma pagina de cadastro, pagina principal com os animais disponiveis e pagina de perfil onde é possivel editar a imagem, solicitar cadastro de animal e sair da aplicação. Utiliza HTML, CSS e JavaScript como tecnologia.</p>
             </div>
             <div class="container-projeto">
                 <div class="container-imagem-projeto">
-                    <img src="/img/projeto3-alurabook.png" alt="">
-                    <img src="/img/projeto3-alurabook2.png" alt="">
+                    <img src="img/projeto3-alurabook.png" alt="">
+                    <img src="img/projeto3-alurabook2.png" alt="">
                 </div>
                 <p class="descricao-projeto">Projeto desenvolvido durante o curso HTML e CSS da alura. É uma pagina estatica para praticar semantica e estilos. Utiliza HTML e CSS como tecnologia.</p>
             </div>
@@ -97,7 +97,7 @@ let conteudoContato = `<div class="container-contato-principal">
                     </form>
                 </div>
                 <div>
-                    <img src="/img/icon-3154242_640.png" class="img-contato" alt="">
+                    <img src="img/icon-3154242_640.png" class="img-contato" alt="">
                 </div>
             </div>
         </div>`
