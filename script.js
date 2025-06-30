@@ -1,11 +1,13 @@
 let listaLinks = document.getElementsByClassName('link-menu')
 
+//aqui armazenamos em variaveis os links para posteriomente adicionarmos "escutadores"
 let linkSobreMim = document.getElementById('sobre-mim')
 let linkFormacao = document.getElementById('formacao')
 let linkProjeto = document.getElementById('projetos')
 let linkContato = document.getElementById('contato')
 let containerPrincipal = document.getElementById('container')
 
+//aqui armazenamos em variaveis o conteudo que sera mostrado em cada link
 let conteudoSobreMim = `<div class="container-sobremim-principal">
             <h1 class="titulo-principal">Sobre mim</h1>
             <div class="container-sobremim">
@@ -100,9 +102,10 @@ let conteudoContato = `<div class="container-contato-principal">
             </div>
         </div>`
 
+//ao carregar a pagina ja chamamos a funçao que mostra o primeiro conteudo
 trocarPagina(linkSobreMim, conteudoSobreMim)
 
-
+//adicionamos "escutadores" aos links para que troque o conteudo assim que clicado
 linkSobreMim.addEventListener('click', () => {
     trocarPagina(linkSobreMim, conteudoSobreMim)
 })
@@ -116,132 +119,16 @@ linkContato.addEventListener('click', () => {
     trocarPagina(linkContato, conteudoContato)
 })
 
-
-
+//essa função é a junção do alterar o link clicado visualmente e alterar o conteudo apresrntado 
 function trocarPagina(elemento, conteudo){
     alterarClicado(elemento)
     containerPrincipal.innerHTML = conteudo
 }
 
+//nessa função removemos a classe "clicado" ja estilizado em css e alteramos para o novo elemento, deixando visual o link que foi clicado
 function alterarClicado(elemento){
     for(let link of listaLinks){
         link.classList.remove("clicado")
     }
     elemento.classList.add("clicado")
 }
-
-/*
-function sobreMim(){
-    retirarClicado()
-    adicionarClicado(linkSobreMim)
-    containerPrincipal.innerHTML = conteudoSobreMim
-}
-function formacao(){
-    retirarClicado()
-    adicionarClicado(linkFormacao)
-    containerPrincipal.innerHTML = `<div class="container-formacao-principal">
-            <h1 class="titulo-principal">Formação</h1>
-            <h2 class="subtitulo">Formação academica</h2>
-            <ul class="lista">
-                <li class="item-lista">Uninter</li>
-                <ul class="sublista">
-                    <li class="item-lista subitem">Analise e desenvolvimento de sistemas (cursando)</li>
-                </ul>
-                <li class="item-lista">Alura</li>
-                <ul class="sublista">
-                    <li class="item-lista subitem">Formação: HTML e CSS para projetos web</li>
-                    <li class="item-lista subitem">Formação: Desenvolva aplicaçoes Web com JavaScript</li>
-                    <li class="item-lista subitem">Formação: APISs com Node.js e Express</li>
-                    <li class="item-lista subitem">Formação: Desenvolva aplicações Web em JavaScript com tarefas concorrentes e orientadas a objetos</li>
-                </ul>
-            </ul>
-            <h2 class="subtitulo">Idiomas</h2>
-            <ul class="lista">
-                <li class="item-lista">Portugues</li>
-                <li class="item-lista">Ingles - Intermediario</li>
-            </ul>
-            <div class="certificados">
-                <img src="/img/Captura de ecrã 2025-06-25 173804.png" alt="">
-                <img src="/img/Captura de ecrã 2025-06-25 173804.png" alt="">
-                <img src="/img/Captura de ecrã 2025-06-25 173804.png" alt="">
-                <img src="/img/Captura de ecrã 2025-06-25 173804.png" alt="">
-                <img src="/img/Captura de ecrã 2025-06-25 173804.png" alt="">
-                <img src="/img/Captura de ecrã 2025-06-25 173804.png" alt="">
-            </div>
-
-        </div>`
-}
-
-function projeto(){
-    retirarClicado()
-    adicionarClicado(linkProjeto)
-    containerPrincipal.innerHTML = `<div class="container-projetos-principal">
-            <h1 class="titulo-principal">Projetos</h1>
-            <div class="container-projeto">
-                <div class="container-imagem-projeto">
-                    <img src="/img/projeto1-aluradev.png" alt="">
-                    <img src="/img/projeto1-aluradev2.png" alt="">
-                </div>
-                <p class="descricao-projeto">Projeto de editor de codigos desenvolvido a partir do Challange Alura. Possui pagina principal onde é possivel escrever o codigo, titulo, descrição e alterar a cor da borda e uma segunda pagina chamada comunidade, onde é possivel ver os codigos salvos. Utiliza HTML, CSS e JavaScript como tecnologia.</p>
-            </div>
-            <div class="container-projeto">
-                <div class="container-imagem-projeto">
-                    <img src="/img/projeto2-adota.png" alt="">
-                    <img src="/img/projeto2-adota2.png" alt="">
-                </div>
-                <p class="descricao-projeto">Projeto de site de adoção desenvolvido a partir do Challange Alura. Contem uma pagina de cadastro, pagina principal com os animais disponiveis e pagina de perfil onde é possivel editar a imagem, solicitar cadastro de animal e sair da aplicação. Utiliza HTML, CSS e JavaScript como tecnologia.</p>
-            </div>
-            <div class="container-projeto">
-                <div class="container-imagem-projeto">
-                    <img src="/img/projeto3-alurabook.png" alt="">
-                    <img src="/img/projeto3-alurabook2.png" alt="">
-                </div>
-                <p class="descricao-projeto">Projeto desenvolvido durante o curso HTML e CSS da alura. É uma pagina estatica para praticar semantica e estilos. Utiliza HTML e CSS como tecnologia.</p>
-            </div>
-        </div>`
-
-}
-function contato(){
-    retirarClicado()
-    adicionarClicado(linkContato)
-    containerPrincipal.innerHTML = `<div class="container-contato-principal">
-            <h1 class="titulo-principal">Contato</h1>
-            <div class="container-contato">
-                <div>
-                    <ul class="lista">
-                        <li class="item-lista">Email: gabymonteiro197@gmail.com</li>
-                        <li class="item-lista">GitHub: gabriellysouz</li>
-                        <li class="item-lista">Telefone: (15) 99999-9999</li>
-                    </ul>
-                    <form class="form-contato">
-                        <h2 class="subtitulo-contato">Ou faça um pedido de contato!</h2>
-                        <label for="nome" class="titulo-form">Nome</label>
-                        <input type="text" name="nome"  class="input-contato">
-                        
-                        <label for="email" class="titulo-form">Email</label>
-                        <input type="text" name="email" class="input-contato">
-
-                        <label for="descricao" class="titulo-form">Pedido de contato</label>
-                        <textarea name="descricao" id="" maxlength="100" class="texto-descricao"></textarea>
-
-                        <input class="botao-contato" type="submit" value="Enviar pedido de contato">
-                    </form>
-                </div>
-                <div>
-                    <img src="/img/icon-3154242_640.png" class="img-contato" alt="">
-                </div>
-            </div>
-        </div>`
-}
-function retirarClicado(){
-    for(let link of listaLinks){
-        link.classList.remove("clicado")
-    }
-}
-function adicionarClicado(elemento){
-    elemento.classList.add("clicado")
-}*/
-
-
-
-
