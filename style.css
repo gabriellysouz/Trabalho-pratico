@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+}
+
+.container-menu{
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    background-color: #E3E7B3;
+    padding-top: 40px;
+}
+.titulo-menu{
+    font-size: 30px;
+    padding: 20px;
+    padding-bottom: 30px;
+}
+
+.link-menu{
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+}
+
+.link-menu:hover{
+    background-color: #F6FFE2;
+}
+
+.clicado {
+    background-color: #F6FFE2;
+}
+
+
+.container-principal {
+    background-color: #F6FFE2;
+    padding-top: 60px;
+    padding-left: 70px;
+    padding-right: 50px;
+    width: 100vw;
+}
+
+.titulo-principal{
+    padding-bottom: 40px;
+}
+.paragrafo-principal{
+    line-height: 30px;
+    padding-right: 80px;
+}
+.container-sobremim{
+    display: flex;
+}
+.img-sobremim{
+    width: 400px;
+    height: auto;
+    padding-right: 100px;
+}
+.lista{
+    padding: 20px;
+}
+.sublista{
+    padding-left: 20px;
+}
+.item-lista{
+    line-height: 30px;
+}
+.certificados{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.certificados img{
+    width: 300px;
+    padding: 15px;
+}
+.container-projeto{
+    padding-bottom: 20px;
+}
+
+.container-imagem-projeto{
+    display: flex;
+}
+.container-imagem-projeto img{
+    width: 500px;
+    padding: 20px;
+}
+.descricao-projeto{
+    padding: 20px;
+    line-height: 30px;
+}
+.container-contato{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+.form-contato{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding-top: 30px;
+}
+.subtitulo-contato{
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.input-contato, .texto-descricao{
+    height: 25px;
+    padding: 15px;
+    border-radius: 5px;
+}
+.titulo-form{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.texto-descricao{
+    height: 80px;
+}
+.botao-contato{
+    padding: 10px;
+    margin-top: 25px;
+    background-color: #E3E7B3;
+    border-color: #E3E7B3;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.botao-contato:hover{
+    background-color: #bfc58b;
+}
+.img-contato{
+    width: 300px;
+    margin: 100px 200px 100px 100px;
+}
